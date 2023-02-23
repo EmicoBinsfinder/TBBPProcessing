@@ -1030,7 +1030,7 @@ for T in Temperatures:
 
                 molgraphs = list(
                     self.G0.subgraph(c).copy() for c in nx.connected_components(self.G0) if
-                    len(c) < mol_limit and len(c) > 1)
+                    len(c) < mol_limit and len(c) > 3)
 
                 # list_reactants : list of sets
                 # each set contains the indexes of atoms belonging to the same molecule
